@@ -1,23 +1,24 @@
 {
   "name": "vs-code-ai-assistant",
-  "displayName": "VS Code AI Assistant",
   "version": "0.0.1",
+  "publisher": "zackmark123",
   "description": "AI Programming Assistant for VS Code",
-  "main": "./dist/extension.js",
-  "scripts": {
-    "vscode:prepublish": "npm run build",
-    "build": "node ./esbuild.js",
-    "watch": "node ./esbuild.js --watch",
-    "test": "node ./out/test/runTest.js"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zackmark123/vs-code-ai-assistant.git"
   },
   "engines": {
     "vscode": "^1.80.0"
   },
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node ./esbuild.js",
+    "watch": "node ./esbuild.js --watch"
+  },
   "dependencies": {
     "@azure/openai": "^1.0.0-beta.2",
-    "axios": "^1.6.2",
-    "vscode-languageclient": "^9.0.1",
-    "tesseract.js": "^5.0.3"
+    "axios": "^1.6.2"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
